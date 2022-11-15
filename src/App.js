@@ -2,10 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import IdCard from './components/IdCard';
+import Greeting from './components/Greeting';
 
 
 function App() {
-const newHeight = JSON.stringify(height)
   return (
     <div className="App">
       <IdCard
@@ -24,6 +24,8 @@ const newHeight = JSON.stringify(height)
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
